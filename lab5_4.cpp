@@ -51,7 +51,24 @@ int main()
 		{
 			nnom += nom[j-k]*pow(most, k);
 		}
+		for (j = 0; op[j] != NULL; j++);
+		j--;
+		for (k = 0; k < j; k++)
+		{
+			nop += op[j-k]*pow(most, k);
+		}
+		for (j = 0; result[j] != NULL; j++);
+		j--;
+		for (k = 0; k < j; k++)
+		{
+			nresult += result[j-k]*pow(most, k);
+		}
+		if (nresult = nnom+nop)
+		{
+			printf("%d", most);
+			return 0;
+		}
 	}
+	printf("no");
 	return 0;
-	//16
 }
