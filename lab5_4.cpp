@@ -14,9 +14,9 @@ int main()
 		{
 			break;
 		}
-		if (nom[i] >= 'A')
+		else if (nom[i] >= 'A')
 		{
-			nom[i] -= 'A' + 10;
+			nom[i] += 'A' - 120;
 		}
 		else
 		{
@@ -33,9 +33,9 @@ int main()
 		{
 			break;
 		}
-		if (op[i] >= 'A')
+		else if (op[i] >= 'A')
 		{
-			op[i] -= 'A' + 10;
+			op[i] -= 'A' - 120;
 		}
 		else
 		{
@@ -52,9 +52,9 @@ int main()
 		{
 			break;
 		}
-		if (result[i] >= 'A')
+		else if (result[i] >= 'A')
 		{
-			result[i] -= 'A' + 10;
+			result[i] -= 'A' - 120;
 		}
 		else
 		{
@@ -65,7 +65,11 @@ int main()
 			most = result[i];
 		}
 	}
-	printf("%d\n", most);
+	for (int i = 0; i < 16; i++)
+	{
+		printf("%d\n", nom[i]);
+	}
+	printf("\n\n%d\n", most);
 	for (int i = most; i < 36; i++)
 	{
 		nnom = 0;
