@@ -9,6 +9,10 @@ int main()
 	scanf("%s", result);
 	for (int i = 0; i < 17; i++)
 	{
+		if (nom[i] > 'A')
+		{
+			nom[i] -= 'A' + 10;
+		}
 		if (most < nom[i])
 		{
 			most = nom[i];
@@ -16,6 +20,10 @@ int main()
 	}
 	for (int i = 0; i < 17; i++)
 	{
+		if (nom[i] > 'A')
+		{
+			nom[i] -= 'A' + 10;
+		}
 		if (most < op[i])
 		{
 			most = op[i];
@@ -23,15 +31,16 @@ int main()
 	}
 	for (int i = 0; i < 17; i++)
 	{
+		if (nom[i] > 'A')
+		{
+			nom[i] -= 'A' + 10;
+		}
 		if (most < result[i])
 		{
 			most = result[i];
 		}
 	}
-	if (most >= 'A')
-	{
-		most -= 'A' + 10;
-	}
+	
 	return 0;
 	//16
 }
