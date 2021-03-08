@@ -2,12 +2,13 @@
 #include <stdbool.h>
 int main()
 {
-	int maxline, line;
-	bool direction = false;
+	int maxline, line, max;
+	bool direction = false, first = true;
 	scanf("%d", maxline);
 	if (maxline % 2 == 0)
 	{
-		char print[maxline-1];
+		max = maxline-1;
+		char print[max];
 		for (int i = 0; i < maxline-1; i++)
 		{
 			if (i = maxline/2-1)
@@ -22,8 +23,9 @@ int main()
 	}
 	else
 	{
+		max = maxline;
 		char print[maxline];
-		for (int i = 0; i < maxline-1; i++)
+		for (int i = 0; i < max; i++)
 		{
 			if (i = maxline/2)
 			{
@@ -37,7 +39,7 @@ int main()
 	}
 	do
 	{
-		
+		while ()
 	}
 	while (line < maxline);
 	return 0;
