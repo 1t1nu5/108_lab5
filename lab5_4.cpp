@@ -44,9 +44,12 @@ int main()
 	for (int i = most; i < 36; i++)
 	{
 		nnom = 0;
-		for (int j = 16, multiplier = most; j >= 0; j--)
+		int j;
+		for (j = 0; nom[j] != NULL; j++);
+		j--;
+		for (k = 0; k < j; k++)
 		{
-			nnom += 
+			
 		}
 	}
 	return 0;
