@@ -3,7 +3,7 @@
 int main()
 {
 	char nom[17], op[17], result[17], most = NULL;
-	int digit;
+	int digit, nnom, nop, nresult;
 	scanf("%s", nom);
 	scanf("%s", op);
 	scanf("%s", result);
@@ -40,7 +40,10 @@ int main()
 			most = result[i];
 		}
 	}
-	
+	for (int i = most; i < 36; i++)
+	{
+		
+	}
 	return 0;
 	//16
 }
