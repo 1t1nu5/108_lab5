@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 int main()
 {
 	char nom[17], op[17], result[17], most = NULL;
@@ -42,7 +43,11 @@ int main()
 	}
 	for (int i = most; i < 36; i++)
 	{
-		
+		nnom = 0;
+		for (int j = 16, multiplier = most; j >= 0; j--)
+		{
+			nnom += 
+		}
 	}
 	return 0;
 	//16
