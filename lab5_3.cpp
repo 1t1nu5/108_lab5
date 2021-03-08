@@ -10,10 +10,21 @@ int main()
 			n--;
 			number++;
 		}
-		else
-		if (number % 2 == 0)
+		else if (number % 2 == 0)
 		{
 			number /= 2;
+		}
+		else if (number % 3 == 0)
+		{
+			number /= 3;
+		}
+		else if (number % 5 == 0)
+		{
+			number /= 5;
+		}
+		else
+		{
+			
 		}
 	}
 	while (n > 0);
