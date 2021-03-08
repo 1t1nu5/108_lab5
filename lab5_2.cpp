@@ -35,7 +35,10 @@ int main()
 					printf("-");
 				}
 				printf("*");
-				
+				for (int i = 0; i < line*2-1; i++)
+				{
+					printf("-");
+				}
 				printf("*");
 				for (int i = 0; i < (n-1)/2-line; i++)
 				{
