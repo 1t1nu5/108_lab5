@@ -14,7 +14,7 @@ int main()
 		{
 			break;
 		}
-		if (nom[i] > 'A')
+		if (nom[i] >= 'A')
 		{
 			nom[i] -= 'A' + 10;
 		}
@@ -33,7 +33,7 @@ int main()
 		{
 			break;
 		}
-		if (op[i] > 'A')
+		if (op[i] >= 'A')
 		{
 			op[i] -= 'A' + 10;
 		}
@@ -52,7 +52,7 @@ int main()
 		{
 			break;
 		}
-		if (result[i] > 'A')
+		if (result[i] >= 'A')
 		{
 			result[i] -= 'A' + 10;
 		}
@@ -65,7 +65,7 @@ int main()
 			most = result[i];
 		}
 	}
-	most++;
+	printf("%d\n", most);
 	for (int i = most; i < 36; i++)
 	{
 		nnom = 0;
@@ -87,11 +87,7 @@ int main()
 		{
 			nresult += result[j-k]*pow(i, k);
 		}
-		if (nresult == nnom+nop)
-		{
-			printf("%d", i);
-			return 0;
-		}
+		printf("\t%d\t%d\t%d\t%d\n", i, nnom, nop, nresult);
 	}
 	printf("no");
 	return 0;
