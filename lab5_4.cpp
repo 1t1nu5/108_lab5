@@ -65,7 +65,7 @@ int main()
 			most = result[i];
 		}
 	}
-	printf("%d", most);
+	most++;
 	for (int i = most; i < 36; i++)
 	{
 		nnom = 0;
@@ -74,23 +74,23 @@ int main()
 		j--;
 		for (int k = 0; k < j; k++)
 		{
-			nnom += nom[j-k]*pow(most, k);
+			nnom += nom[j-k]*pow(i, k);
 		}
 		for (j = 0; op[j] != NULL; j++);
 		j--;
 		for (int k = 0; k < j; k++)
 		{
-			nop += op[j-k]*pow(most, k);
+			nop += op[j-k]*pow(i, k);
 		}
 		for (j = 0; result[j] != NULL; j++);
 		j--;
 		for (int k = 0; k < j; k++)
 		{
-			nresult += result[j-k]*pow(most, k);
+			nresult += result[j-k]*pow(i, k);
 		}
 		if (nresult = nnom+nop)
 		{
-			printf("%d", most);
+			printf("%d", i);
 			return 0;
 		}
 	}
