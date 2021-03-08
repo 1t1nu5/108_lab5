@@ -3,7 +3,7 @@
 int main()
 {
 	int maxline, line, max, col;
-	bool direction = false, first = true, wait = false;
+	bool direction = false, wait = false;
 	scanf("%d", maxline);
 	if (maxline % 2 == 0)
 	{
@@ -41,13 +41,46 @@ int main()
 	do
 	{
 		col = 0;
+		first = true;
 		while (col < max)
 		{
-			if (print[col] == '*')
+			if (print[col] == '*' && col != 0 && direction = false)
+			{
+				if (first == true)
+				{
+					print[col-1] = '*';
+					print[col] = '-';
+					first = false;
+				}
+				else
+				{
+					print[col] = '-';
+					print[col+1] = '*';
+					break;
+				}
+			}
+			else if (print[col] == '*' && direction == true)
 			{
 				if (first == true)
 				{
 					
+				}
+			}
+			else
+			{
+				if (col == 0)
+				{
+					if (wait == true)
+					{
+						wait = false;
+					}
+					else
+					{
+						if (direction = false)
+						{
+							direction = true;
+						}
+					}
 				}
 			}
 		}
