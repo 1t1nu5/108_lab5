@@ -1,7 +1,8 @@
 #include <stdio.h>
 int main()
 {
-	int n;
+	int n, line;
 	scanf("%d", &n);
+	 
 	return 0;
 }
