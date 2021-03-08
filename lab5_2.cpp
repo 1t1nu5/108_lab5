@@ -3,9 +3,8 @@
 int main()
 {
 	int maxline, line;
-	bool direction = false, reuse = false;;
+	bool direction = false;
 	scanf("%d", maxline);
-	reuse:
 	if (maxline % 2 == 0)
 	{
 		char print[maxline-1];
@@ -36,19 +35,9 @@ int main()
 			}
 		}
 	}
-	if (reuse == true)
-	{
-		goto goback;
-	}
 	do
 	{
-		if (line == 0 || line == maxline-1)
-		{
-			reuse = true;
-			goto reuse;
-			goback:
-			reuse = false;
-		}
+		
 	}
 	while (line < maxline);
 	return 0;
