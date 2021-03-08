@@ -26,6 +26,17 @@ int main()
 				printf("-");
 			}
 		}
+		else
+		{
+			if (line <= n/2)
+			{
+				
+			}
+			else
+			{
+				
+			}
+		}
 		printf("\n");
 	} 
 	while (line < n);
