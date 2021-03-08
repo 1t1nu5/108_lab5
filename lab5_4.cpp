@@ -49,7 +49,7 @@ int main()
 		j--;
 		for (k = 0; k < j; k++)
 		{
-			
+			nnom += nom[j-k]*pow(most, k);
 		}
 	}
 	return 0;
