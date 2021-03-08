@@ -14,6 +14,10 @@ int main()
 		{
 			nom[i] -= 'A' + 10;
 		}
+		else
+		{
+			nom[i] -= 10;
+		}
 		if (most < nom[i])
 		{
 			most = nom[i];
@@ -24,6 +28,10 @@ int main()
 		if (nom[i] > 'A')
 		{
 			nom[i] -= 'A' + 10;
+		}
+		else
+		{
+			nom[i] -= 10;
 		}
 		if (most < op[i])
 		{
@@ -36,11 +44,16 @@ int main()
 		{
 			nom[i] -= 'A' + 10;
 		}
+		else
+		{
+			nom[i] -= 10;
+		}
 		if (most < result[i])
 		{
 			most = result[i];
 		}
 	}
+	most--;
 	for (int i = most; i < 36; i++)
 	{
 		nnom = 0;
