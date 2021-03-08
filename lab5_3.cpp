@@ -7,6 +7,7 @@ int main()
 	scanf("%d", &n);
 	do
 	{
+		printf("%d\t%d\n", number, cnumber);
 		if (number == 1)
 		{
 			n--;
@@ -30,15 +31,15 @@ int main()
 			check = true;
 			cnumber /= 5;
 		}
-		else if (cnumber % 2 == 0)
+		else if (cnumber % 2 == 0 && check == true)
 		{
 			cnumber /= 2;
 		}
-		else if (cnumber % 3 == 0)
+		else if (cnumber % 3 == 0 && check == true)
 		{
 			cnumber /= 3;
 		}
-		else if (cnumber % 5 == 0)
+		else if (cnumber % 5 == 0 && check == true)
 		{
 			cnumber /= 5;
 		}
@@ -53,7 +54,6 @@ int main()
 			number++;
 			check = false;
 		}
-		printf("%d\t%d\n", number, cnumber);
 	}
 	while (n > 0);
 	printf("%d", number);
