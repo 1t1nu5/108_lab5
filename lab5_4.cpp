@@ -29,17 +29,17 @@ int main()
 	}
 	for (int i = 0; i < 17; i++)
 	{
-		if (nom[i] == NULL)
+		if (op[i] == NULL)
 		{
 			break;
 		}
-		if (nom[i] > 'A')
+		if (op[i] > 'A')
 		{
-			nom[i] -= 'A' + 10;
+			op[i] -= 'A' + 10;
 		}
 		else
 		{
-			nom[i] -= '0';
+			op[i] -= '0';
 		}
 		if (most < op[i])
 		{
@@ -48,17 +48,17 @@ int main()
 	}
 	for (int i = 0; i < 17; i++)
 	{
-		if (nom[i] == NULL)
+		if (result[i] == NULL)
 		{
 			break;
 		}
-		if (nom[i] > 'A')
+		if (result[i] > 'A')
 		{
-			nom[i] -= 'A' + 10;
+			result[i] -= 'A' + 10;
 		}
 		else
 		{
-			nom[i] -= '0';
+			result[i] -= '0';
 		}
 		if (most < result[i])
 		{
