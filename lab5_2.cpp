@@ -2,8 +2,10 @@
 #include <stdbool.h>
 int main()
 {
-	int maxline, line, direction = false;
+	int maxline, line;
+	bool direction = false, reuse = false;;
 	scanf("%d", maxline);
+	reuse:
 	if (maxline % 2 == 0)
 	{
 		char print[maxline-1];
@@ -34,9 +36,18 @@ int main()
 			}
 		}
 	}
+	if (reuse == true)
+	{
+		goto goback;
+	}
 	do
 	{
-		
+		if (line == 0 || line == maxline-1)
+		{
+			goto reuse;
+			goback:
+				
+		}
 	}
 	while (line < maxline);
 	return 0;
