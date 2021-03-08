@@ -1,16 +1,11 @@
 #include <stdio.h>
 int main()
 {
-	int n, number = 2;
+	int n, number = 1, i;
 	scanf("%d", &n);
-	if (n == 1)
-	{
-		printf("1");
-		return 0;
-	}
 	do
 	{
-		int i = number;
+		i = number;
 		while (i % 2 == 0)
 		{
 			i /= 2;
@@ -30,7 +25,7 @@ int main()
 		number++;
 	}
 	while (n > 0);
-	printf("%d", number);
+	printf("%d", number-1);
 
 	return 0;
 }
