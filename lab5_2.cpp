@@ -35,7 +35,43 @@ int main()
 				printf("-");
 			}
 		}
-		
+		else
+		{
+			if (line <= n/2)
+			{
+				for (int i = 0; i < (n-1)/2-line; i++)
+				{
+					printf("-");
+				}
+				printf("*");
+				for (int i = 0; i < line*2-1; i++)
+				{
+					printf("-");
+				}
+				printf("*");
+				for (int i = 0; i < (n-1)/2-line; i++)
+				{
+					printf("-");
+				}
+			}
+			else
+			{
+				for (int i = n/2; i < n-line; i++)
+				{
+					printf("-");
+				}
+				printf("*");
+				for (int i = n/2; i < line*2-1; i++)
+				{
+					printf("-");
+				}
+				printf("*");
+				for (int i = n/2; i < n-line; i++)
+				{
+					printf("-");
+				}
+			}
+		}
 		printf("\n");
 		line++;
 	} 
