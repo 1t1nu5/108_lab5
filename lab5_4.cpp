@@ -47,19 +47,19 @@ int main()
 		int j;
 		for (j = 0; nom[j] != NULL; j++);
 		j--;
-		for (k = 0; k < j; k++)
+		for (int k = 0; k < j; k++)
 		{
 			nnom += nom[j-k]*pow(most, k);
 		}
 		for (j = 0; op[j] != NULL; j++);
 		j--;
-		for (k = 0; k < j; k++)
+		for (int k = 0; k < j; k++)
 		{
 			nop += op[j-k]*pow(most, k);
 		}
 		for (j = 0; result[j] != NULL; j++);
 		j--;
-		for (k = 0; k < j; k++)
+		for (int k = 0; k < j; k++)
 		{
 			nresult += result[j-k]*pow(most, k);
 		}
