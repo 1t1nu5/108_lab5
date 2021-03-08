@@ -1,8 +1,13 @@
 #include <stdio.h>
 int main()
 {
-	int n, number = 1
+	int n, number = 1;
 	scanf("%d", &n);
+	if (n == 1)
+	{
+		printf("1");
+		return 0;
+	}
 	do
 	{
 		
