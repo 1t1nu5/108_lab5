@@ -72,25 +72,22 @@ int main()
 		nop = 0;
 		nresult = 0;
 		int j;
-		for (j = 0; nom[j] != NULL; j++);
-		j--;
+		for (j = 0; nom[j+1] != NULL; j++);
 		for (int k = 0; k < j; k++)
 		{
 			nnom += nom[j-k]*pow(i, k);
 		}
-		for (j = 0; op[j] != NULL; j++);
-		j--;
+		for (j = 0; op[j+1] != NULL; j++);
 		for (int k = 0; k < j; k++)
 		{
 			nop += op[j-k]*pow(i, k);
 		}
-		for (j = 0; result[j] != NULL; j++);
-		j--;
+		for (j = 0; result[j+1] != NULL; j++);
 		for (int k = 0; k < j; k++)
 		{
 			nresult += result[j-k]*pow(i, k);
 		}
-		if (nresult = nnom+nop)
+		if (nresult == nnom+nop)
 		{
 			printf("%d", i);
 			return 0;
