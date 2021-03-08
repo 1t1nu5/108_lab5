@@ -10,37 +10,25 @@ int main()
 		if (number == 1)
 		{
 			n--;
-			number = 1;
+			number++;
 		}
-		else if (check == true)
+		else if (number % 2 == 0 && check == false)
 		{
-			if (number % 2 == 0)
-			{
-				if (check == false)
-				{
-					cnumber = number;
-					check = true;
-				}
-				cnumber /= 2;
-			}
-			else if (number % 3 == 0)
-			{
-				if (check == false)
-				{
-					cnumber = number;
-					check = true;
-				}
-				cnumber /= 3;
-			}
-			else if (number % 5 == 0)
-			{
-				if (check == false)
-				{
-					cnumber = number;
-					check = true;
-				}
-				cnumber /= 5;
-			}
+			cnumber = number;
+			check = true;
+			cnumber /= 2;
+		}
+		else if (number % 3 == 0 && check == false)
+		{
+			cnumber = number;
+			check = true;
+			cnumber /= 3;
+		}
+		else if (number % 5 == 0 && check == false)
+		{
+			cnumber = number;
+			check = true;
+			cnumber /= 5;
 		}
 		else if (cnumber % 2 == 0)
 		{
@@ -68,5 +56,6 @@ int main()
 	}
 	while (n > 0);
 	printf("%d", number);
+
 	return 0;
 }
