@@ -14,6 +14,24 @@ int main()
 			most = nom[i];
 		}
 	}
+	for (int i = 0; i < 17; i++)
+	{
+		if (most < op[i])
+		{
+			most = op[i];
+		}
+	}
+	for (int i = 0; i < 17; i++)
+	{
+		if (most < result[i])
+		{
+			most = result[i];
+		}
+	}
+	if (most >= 'A')
+	{
+		most -= 'A' + 10;
+	}
 	return 0;
 	//16
 }
