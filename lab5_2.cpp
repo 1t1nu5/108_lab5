@@ -2,8 +2,8 @@
 #include <stdbool.h>
 int main()
 {
-	int maxline, line, max;
-	bool direction = false, first = true;
+	int maxline, line, max, col;
+	bool direction = false, first = true, wait = false;
 	scanf("%d", maxline);
 	if (maxline % 2 == 0)
 	{
@@ -20,6 +20,7 @@ int main()
 				print[i] = '-';
 			}
 		}
+		wait = true;
 	}
 	else
 	{
@@ -39,7 +40,17 @@ int main()
 	}
 	do
 	{
-		while ()
+		col = 0;
+		while (col < max)
+		{
+			if (print[col] == '*')
+			{
+				if (first == true)
+				{
+					
+				}
+			}
+		}
 	}
 	while (line < maxline);
 	return 0;
