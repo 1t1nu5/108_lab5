@@ -47,7 +47,20 @@ int main()
 			}
 			else
 			{
-				
+				for (int i = n/2; i < n-line; i++)
+				{
+					printf("-");
+				}
+				printf("*");
+				for (int i = n/2; i < line*2-1; i++)
+				{
+					printf("-");
+				}
+				printf("*");
+				for (int i = n/2; i < n-line; i++)
+				{
+					printf("-");
+				}
 			}
 		}
 		printf("\n");
