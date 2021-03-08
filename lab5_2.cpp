@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include <stdbool.h>
 int main()
 {
-	int n, line = 0;
-	scanf("%d", &n);
-	
+	int maxline, line, direction = false;
+	scanf("%d", maxline);
 	return 0;
 }
