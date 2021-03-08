@@ -69,6 +69,8 @@ int main()
 	for (int i = most; i < 36; i++)
 	{
 		nnom = 0;
+		nop = 0;
+		nresult = 0;
 		int j;
 		for (j = 0; nom[j] != NULL; j++);
 		j--;
