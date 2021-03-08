@@ -44,9 +44,10 @@ int main()
 	{
 		if (line == 0 || line == maxline-1)
 		{
+			reuse = true;
 			goto reuse;
 			goback:
-				
+			reuse = false;
 		}
 	}
 	while (line < maxline);
