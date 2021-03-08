@@ -3,13 +3,17 @@
 #include <math.h>
 int main()
 {
-	char nom[17], op[17], result[17], most = NULL;
+	char nom[17] = {}, op[17] = {}, result[17] = {}, most = NULL;
 	int digit, nnom, nop, nresult;
 	scanf("%s", nom);
 	scanf("%s", op);
 	scanf("%s", result);
 	for (int i = 0; i < 17; i++)
 	{
+		if (nom[i] == NULL)
+		{
+			break;
+		}
 		if (nom[i] > 'A')
 		{
 			nom[i] -= 'A' + 10;
@@ -25,6 +29,10 @@ int main()
 	}
 	for (int i = 0; i < 17; i++)
 	{
+		if (nom[i] == NULL)
+		{
+			break;
+		}
 		if (nom[i] > 'A')
 		{
 			nom[i] -= 'A' + 10;
@@ -40,6 +48,10 @@ int main()
 	}
 	for (int i = 0; i < 17; i++)
 	{
+		if (nom[i] == NULL)
+		{
+			break;
+		}
 		if (nom[i] > 'A')
 		{
 			nom[i] -= 'A' + 10;
@@ -53,6 +65,7 @@ int main()
 			most = result[i];
 		}
 	}
+	printf("%d", most);
 	for (int i = most; i < 36; i++)
 	{
 		nnom = 0;
