@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int n, line;
+	int n, line = 0;
 	scanf("%d", &n);
 	do
 	{
@@ -30,7 +30,17 @@ int main()
 		{
 			if (line <= n/2)
 			{
+				for (int i = 0; i < (n-1)/2-line; i++)
+				{
+					printf("-");
+				}
+				printf("*");
 				
+				printf("*");
+				for (int i = 0; i < (n-1)/2-line; i++)
+				{
+					printf("-");
+				}
 			}
 			else
 			{
@@ -38,6 +48,7 @@ int main()
 			}
 		}
 		printf("\n");
+		line++;
 	} 
 	while (line < n);
 	return 0;
