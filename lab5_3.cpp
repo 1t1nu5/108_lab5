@@ -53,6 +53,7 @@ int main()
 			number++;
 			check = false;
 		}
+		printf("%d\t%d\n", number, cnumber);
 	}
 	while (n > 0);
 	printf("%d", number);
