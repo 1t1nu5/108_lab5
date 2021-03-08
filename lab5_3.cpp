@@ -1,7 +1,11 @@
 #include <stdio.h>
 int main()
 {
-	int n, number;
+	int n, number = 1;
 	scanf("%d", &n);
-	return 0;
+	do
+	{
+		
+	}
+	while (n > 0);
 }
