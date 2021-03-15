@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 int main()
 {
 	int maxline, line, max, col;
-	bool direction = false, wait = false;
-	scanf("%d", maxline);
+	bool direction = false, wait = false, first;
+	scanf("%d", &maxline);
+	char print[maxline];
 	if (maxline % 2 == 0)
 	{
 		max = maxline-1;
-		char print[max];
 		for (int i = 0; i < maxline-1; i++)
 		{
 			if (i = maxline/2-1)
@@ -25,7 +26,6 @@ int main()
 	else
 	{
 		max = maxline;
-		char print[maxline];
 		for (int i = 0; i < max; i++)
 		{
 			if (i = maxline/2)
@@ -44,7 +44,7 @@ int main()
 		first = true;
 		while (col < max)
 		{
-			if (print[col] == '*' && col != 0 && direction = false)
+			if (print[col] == '*' && col != 0 && direction == false)
 			{
 				if (first == true)
 				{
@@ -63,7 +63,15 @@ int main()
 			{
 				if (first == true)
 				{
-					
+					print[col] = '-';
+					print[col+1] = '*';
+					col++;
+				}
+				else
+				{
+					print[col-1] = '*';
+					print[col] = '-';
+					break;
 				}
 			}
 			else
@@ -83,6 +91,7 @@ int main()
 					}
 				}
 			}
+			col++;
 		}
 	}
 	while (line < maxline);
